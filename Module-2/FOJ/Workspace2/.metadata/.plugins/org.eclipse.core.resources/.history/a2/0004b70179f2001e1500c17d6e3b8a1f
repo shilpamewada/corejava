@@ -1,0 +1,12 @@
+package PassingarrayAsArguments;
+
+public class Check {
+
+	public static void main(String[] args) {
+		char ch = 65; 
+		ch = (char)(++ch + ch++ / 5 + 40); 
+		System.out.println(ch);
+
+	}
+
+}

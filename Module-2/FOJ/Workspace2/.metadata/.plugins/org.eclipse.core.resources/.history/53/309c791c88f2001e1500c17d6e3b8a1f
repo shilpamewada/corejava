@@ -1,0 +1,27 @@
+package PassingarrayAsArguments;
+
+public class  Duplicates{
+	    public static void main(String[] args) {
+	        int[] arr1 = {2, 2, 3, 2, 2};
+	        int[] arr2 = {1, 2, 3, 4, 5};
+
+	        duplicate_digit_times(arr1);
+	        duplicate_digit_times(arr2);
+	    }
+
+	    public static void duplicate_digit_times(int[] arr) {
+	        for (int i = 0; i < arr.length; i++) {
+	            int count = 1;
+	            boolean duplicate = false;
+	            for (int j = i + 1; j < arr.length; j++) {
+	                if (arr[i] == arr[j]) {
+	                    count++;
+	                    duplicate = true;
+	                }
+	            }
+	            if (duplicate && count > 1) {
+	                System.out.println(arr[i] + " is repeated " + count + " times");
+	            }
+	        }
+	    }
+	}

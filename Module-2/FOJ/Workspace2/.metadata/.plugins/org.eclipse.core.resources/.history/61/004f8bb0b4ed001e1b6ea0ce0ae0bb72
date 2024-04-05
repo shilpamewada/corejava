@@ -1,0 +1,16 @@
+package string;
+
+public class BasicProgram {
+
+	public static void main(String[] args) {
+		String name = "Shilpa Mewada";
+		System.out.println("number of character in string is : " + name.length());
+		System.out.println(  "the 5th index value is " + name.charAt(12));
+		
+				
+	}
+
+}
+
+
++

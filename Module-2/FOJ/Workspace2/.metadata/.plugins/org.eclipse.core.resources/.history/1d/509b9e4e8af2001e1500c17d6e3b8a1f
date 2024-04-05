@@ -1,0 +1,48 @@
+package day02;
+
+class Demo1{
+	private int a,b;                                      //Instance 
+	
+	public Demo1(){
+		System.out.println("Hi!this is Constructor");
+	}
+	
+	public Demo1(int a,int b){                           //Local
+		System.out.println("Hi!this is Parameterized Constructor");
+		this.a = a;
+		this.b = b;
+	}
+	
+	public void read(int a,int b){                           //Local
+		
+		this.a = a;
+		this.b = b;
+	}
+	
+	public void show(){
+		System.out.println(a);
+		System.out.println(b);
+	}
+	
+	public void sum(){
+		System.out.println(a + b);
+		
+	}
+}
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo1 obj1 = new Demo1();
+		obj1.read(10,20);
+		obj1.show();
+		obj1.sum();
+		
+		Demo1 obj2 = new Demo1(100,200);
+		obj2.show();
+		obj2.sum();
+
+	}
+
+}

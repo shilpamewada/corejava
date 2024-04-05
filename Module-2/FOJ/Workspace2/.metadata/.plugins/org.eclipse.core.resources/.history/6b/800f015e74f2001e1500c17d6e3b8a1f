@@ -1,0 +1,12 @@
+package PassingarrayAsArguments;
+
+public class Check {
+
+	public static void main(String[] args) {
+		boolean bool = false; 
+		if (bool == false) 
+		    System.out.print((bool = true) ? !bool == bool : bool == !bool);
+
+	}
+
+}

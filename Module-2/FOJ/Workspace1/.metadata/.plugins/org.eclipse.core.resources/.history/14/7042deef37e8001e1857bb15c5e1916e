@@ -1,0 +1,43 @@
+package day04;
+
+public class BillCalculator {
+
+    public static void main(String[] args) {
+        bill_calculator();
+    }
+
+    public static void bill_calculator() {
+        System.out.println("Menu:");
+        System.out.println("1. Apple Juice - $2.50");
+        System.out.println("2. Musk Melon - $3.00");
+        System.out.println("3. Sugar Cane - $1.75");
+        System.out.println("4. Beetroot - $2.00");
+
+        int choice = 3; // For example, let's say user selects option 3 (Sugar Cane)
+
+        double price;
+        switch (choice) {
+            case 1:
+                price = 2.50;
+                System.out.println("You've selected Apple Juice. Price: $" + price);
+                break;
+            case 2:
+                price = 3.00;
+                System.out.println("You've selected Musk Melon. Price: $" + price);
+                break;
+            case 3:
+                price = 1.75;
+                System.out.println("You've selected Sugar Cane. Price: $" + price);
+                break;
+            case 4:
+                price = 2.00;
+                System.out.println("You've selected Beetroot. Price: $" + price);
+                break;
+            default:
+                System.out.println("Invalid choice.");
+                return;
+        }
+
+        // Additional processing can be done here
+    }
+}

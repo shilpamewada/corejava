@@ -1,0 +1,49 @@
+package day04;
+
+import java.util.Scanner;
+
+public class BillCalculator {
+
+    public static void main(String[] args) {
+        bill_calculator();
+    }
+
+    public static void bill_calculator() {
+        System.out.println("Menu:");
+        System.out.println("1. Apple Juice - $2.50");
+        System.out.println("2. Musk Melon - $3.00");
+        System.out.println("3. Sugar Cane - $1.75");
+        System.out.println("4. Beetroot - $2.00");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your choice: ");
+        String choice = scanner.nextLine();
+
+        double price;
+        switch (choice) {
+            case "Apple Juice":
+                price = 2.50;
+                System.out.println("You've selected Apple Juice. Price: $" + price);
+                break;
+            case "Musk Melon":
+                price = 3.00;
+                System.out.println("You've selected Musk Melon. Price: $" + price);
+                break;
+            case "Sugar Cane":
+                price = 1.75;
+                System.out.println("You've selected Sugar Cane. Price: $" + price);
+                break;
+            case "Beetroot":
+                price = 2.00;
+                System.out.println("You've selected Beetroot. Price: $" + price);
+                break;
+            default:
+                System.out.println("Invalid choice.");
+                return;
+        }
+
+        // Additional processing can be done here
+
+        scanner.close(); // Closing the scanner to prevent resource leak
+    }
+}

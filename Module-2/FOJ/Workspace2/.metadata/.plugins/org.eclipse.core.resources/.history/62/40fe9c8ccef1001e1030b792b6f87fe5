@@ -1,0 +1,14 @@
+package day7;
+
+public class Student_Final {
+
+	public static void main(String[] args) {
+
+		Student s = new Student(101,"Rizwan");
+//		Employee e = new Employee(101,"Rizwan",12345678);
+		s.details();
+//		e.Details();
+
+	}
+
+}

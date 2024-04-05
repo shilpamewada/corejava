@@ -1,0 +1,42 @@
+package string;
+
+public class Encryption{
+
+	public static void main(String[] args) {
+		String plaintext = "NAVYA";
+		int shift = 1;
+		// Encrypt the plaintext
+		System.out.println("Encrypted text: " + encrypt(plaintext, shift));
+	}
+	// Method to encrypt a plaintext using Caesar cipher
+	public static String encrypt(String plaintext, int shift) {
+		 StringBuilder ciphertext = new StringBuilder();
+
+	        for (int i = 0; i < plaintext.length(); i++) {
+	            char ch = plaintext.charAt(i);
+
+	            // Encrypt uppercase letters
+	            if (ch >= 65 && ch <= 90) { // ASCII values for uppercase letters (A-Z)
+	                ch = (char) ((ch - 65 + shift) % 26 + 65);
+	            }
+	            // Encrypt lowercase letters
+	            else if (ch >= 97 && ch <= 122) { // ASCII values for lowercase letters (a-z)
+	                ch = (char) ((ch - 97 + shift) % 26 + 97);
+	            }
+	            // Leave other characters unchanged
+	            ciphertext.append(ch);
+	        }
+
+	        return ciphertext.toString();
+	    }
+
+//	    public static void main(String[] args) {
+//	        String plaintext = "Hello, World!";
+//	        int shift = 3;
+//
+//	        String ciphertext = encrypt(plaintext, shift);
+//	        System.out.println("Ciphertext: " + ciphertext);
+//	    }
+	
+	}
+}

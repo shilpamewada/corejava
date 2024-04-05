@@ -1,0 +1,12 @@
+package Employee;
+
+public class EmployeeFinal {
+
+	public static void main(String[] args) {
+
+		Employee e = new Employee(101,"Rizwan",12345678);
+		e.Details();
+
+	}
+
+}

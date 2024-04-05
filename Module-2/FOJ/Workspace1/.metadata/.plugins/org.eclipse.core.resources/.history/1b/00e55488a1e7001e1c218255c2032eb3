@@ -1,0 +1,21 @@
+package NestedForLoop;
+
+public class RightTriangle {
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            // Print spaces to align stars to the right
+            for (int j = 5; j > i; j--) {
+                System.out.print(" ");
+            }
+            // Print stars with additional space between them
+            for (int k = 1; k <= i; k++) {
+                System.out.print("*");
+                if(k < i) { // Add space if not at the end of the row
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(); // Move to the next line after printing each row
+        }
+    }
+}

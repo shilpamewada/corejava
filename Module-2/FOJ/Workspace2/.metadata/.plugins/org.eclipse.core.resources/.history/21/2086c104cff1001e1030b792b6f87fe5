@@ -1,0 +1,9 @@
+package day7;
+
+public class Student_Final {
+
+    public static void main(String[] args) {
+        Student s = new Student(101, "Rizwan");
+        s.details();
+    }
+}

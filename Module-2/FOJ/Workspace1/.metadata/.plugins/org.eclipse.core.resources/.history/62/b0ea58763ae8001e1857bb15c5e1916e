@@ -1,0 +1,65 @@
+package day04;
+
+import java.util.Scanner;
+
+public class BillCalculator {
+
+    public static void main(String[] args) {
+        bill_calculator();
+    }
+
+    public static void bill_calculator() {
+        System.out.println("Menu:");
+        System.out.println("1. Apple Juice - $7.50");
+        System.out.println("2. Musk Melon - $15.00");
+        System.out.println("3. Sugar Cane - $7.75");
+        System.out.println("4. Beetroot - $5.00");
+        System.out.println("5. Exit");
+
+        Scanner scanner = new Scanner(System.in);
+        double total = 0;
+
+        while (true) {
+            System.out.print("Enter your choice: ");
+            String choice = scanner.nextLine();
+
+            if (choice.equalsIgnoreCase("Exit")) {
+                break; // Exit the loop if the user chooses to finish
+            }
+
+            double price;
+            switch (choice) {
+                case "Apple Juice":
+                    price = 7.50;
+                    System.out.println("You've selected Apple Juice. Price: $" + price);
+                    total += price;
+                    System.out.println("Current Total: $" + total);
+                    break;
+                case "Musk Melon":
+                    price = 15.00;
+                    System.out.println("You've selected Musk Melon. Price: $" + price);
+                    total += price;
+                    System.out.println("Current Total: $" + total);
+                    break;
+                case "Sugar Cane":
+                    price = 7.75;
+                    System.out.println("You've selected Sugar Cane. Price: $" + price);
+                    total += price;
+                    System.out.println("Current Total: $" + total);
+                    break;
+                case "Beetroot":
+                    price = 5.00;
+                    System.out.println("You've selected Beetroot. Price: $" + price);
+                    total += price;
+                    System.out.println("Current Total: $" + total);
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        }
+
+        System.out.println("Grand Total: $" + total);
+
+        scanner.close(); // Closing the scanner to prevent resource leak
+    }
+}

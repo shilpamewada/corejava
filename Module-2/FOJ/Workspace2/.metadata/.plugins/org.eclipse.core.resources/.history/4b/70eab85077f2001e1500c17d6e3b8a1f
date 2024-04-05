@@ -1,0 +1,11 @@
+package PassingarrayAsArguments;
+
+public class Check {
+
+	public static void main(String[] args) {
+		int number = 1234;
+		int num = number++ * number++ / ++number + ++number + number++;
+
+	}
+
+}
