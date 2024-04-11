@@ -1,0 +1,14 @@
+package Arrays;
+
+public class SwitchTest {
+    public static void main(String[] args) {
+    	String str = new String("str");
+    	str = str + str;
+    	while(str.length() < 7) {
+    	    str += str.substring(5);
+    	}
+    	System.out.println(str);
+
+    }
+    
+}
